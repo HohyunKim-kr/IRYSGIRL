@@ -55,11 +55,11 @@ export const initBoard = (size: number): number[][] => {
     board: number[][],
     direction: string
   ): { newBoard: number[][]; score: number; changed: boolean } => {
-    const size = board.length;
+    //const size = board.length;
     let newBoard = board.map(row => [...row]);
     let score = 0;
   
-    const original = JSON.stringify(newBoard); // for change detection
+    //const original = JSON.stringify(newBoard); // for change detection
   
     if (direction === 'ArrowUp') {
         newBoard = rotateCounterClockwise(newBoard); // 위는 반시계 방향
