@@ -1,0 +1,100 @@
+/* App.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 수평 중앙 정렬 */
+  justify-content: center; /* 수직 중앙 정렬 */
+  min-height: 100vh; /* 뷰포트 전체 높이 사용 */
+  color: #00FFFF;
+  padding: 20px;
+  width: 100%; /* 부모 요소의 너비를 100%로 설정 */
+  overflow: auto; /* 내용이 넘치면 스크롤 가능 */
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #00FFFF;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+.score {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #2A2A2A;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid #00FFFF;
+  color: #FFFFFF;
+}
+
+.score span {
+  color: #00FFFF;
+}
+
+.reset-btn {
+  background-color: #2A2A2A;
+  color: #00FFFF;
+  border: 1px solid #00FFFF;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.reset-btn:hover {
+  background-color: #00FFFF;
+  color: #1A1A1A;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.game-container {
+  position: relative;
+  background-color: #2A2A2A;
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px solid #00FFFF;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+.game-over {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #00FFFF;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 12px;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
